@@ -22,17 +22,29 @@ pod 'CSReduxKit'
 
 ## Knowledge
 
+CSReduxkit是基于redux在iOS上实现的一个单向数据流方案。
+
+相关概念：
+[Redux 中文文档](http://www.redux.org.cn)
+
+iOS大佬onevcat曾对redux做过相关介绍。
+
+可参考文章：
+[单向数据流动的函数式 View Controller](https://onevcat.com/2017/07/state-based-viewcontroller/)
+
+### redux概念
+
 当用户点击了视图上的某个元素时，会发出一个 Action，
 这个 Action 包含了两个基本元素：
 
-1. Action Type;
-2. Action data;
+- Action Type;
+- Action data;
 
 比如「点击按钮」这个 Action，可能会被描述为：Action(“buttonClickAction”, [“ID”: 100])。然后这个 Action 就会到达 Store。
 Store 也很简单，只做两件事：
 
-1. 接收 Action；
-2. 将 Action 和 State 发送给 Reducer。
+- 接收 Action；
+- 将 Action 和 State 发送给 Reducer。
 
 Reducer 做的事情就更简单了，接收 Store 发出的 Action 和 State，内部运算之后，返回一个新的 State。
 Store 拿到了新的 State 后，再把 State 发送给 View。View 渲染新的 State。
@@ -49,6 +61,7 @@ Action 用来描述发生了什么事情，比如不小心用脚踢到了椅子�
 3. Store
 
 store是核心模块，就像大脑会不停地接受到各种 Action，并作出反应，只不过在这里 Store 并不具备「做决定」的能力，而是把这个 Action 交给了所有可能关心它的 Reducer。
+
 4. State
 
 State 是一个隐形的杀手，因为使用它极其方便，而它的危害也不会瞬间爆发，就像温水煮青蛙一样，等发现问题越来越多、被各种多线程问题困扰时，就会感受到它的威力了。
@@ -56,6 +69,10 @@ State 是一个隐形的杀手，因为使用它极其方便，而它的危害�
 5. Reducer 
 
 reducer负责接收 Store 发出的 Action 和 State，内部运算之后，返回一个新的 State 给 store。
+
+### CSReduxKit实现
+
+....
 
 
 ## Author
