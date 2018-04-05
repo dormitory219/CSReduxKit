@@ -34,6 +34,8 @@ iOS大佬onevcat曾对redux做过相关介绍。
 
 ### redux概念
 
+![Alt text](./redux_basic_data_flow.gif)
+
 当用户点击了视图上的某个元素时，会发出一个 Action，
 这个 Action 包含了两个基本元素：
 
