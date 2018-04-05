@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CSReduxKit_Example' do
+  pod 'CSReduxKit', :path => '../'
+
+  target 'CSReduxKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
