@@ -1,0 +1,6 @@
+framework module CSReduxKit {
+  umbrella header "CSReduxKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

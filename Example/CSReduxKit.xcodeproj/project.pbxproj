@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		20049C0516213C9F7DBECB79 /* Pods_CSReduxKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDD8D71DE4ED955ED9D2FAE /* Pods_CSReduxKit_Example.framework */; };
+		4522917E2076809800B2A96D /* CSInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452291702076809800B2A96D /* CSInputView.m */; };
+		4522917F2076809800B2A96D /* CSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452291722076809800B2A96D /* CSTableView.m */; };
+		452291802076809800B2A96D /* CSTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452291742076809800B2A96D /* CSTitleView.m */; };
+		452291812076809800B2A96D /* CSDemoAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 452291772076809800B2A96D /* CSDemoAction.m */; };
+		452291822076809800B2A96D /* CSDemoReducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 452291792076809800B2A96D /* CSDemoReducer.m */; };
+		452291832076809800B2A96D /* CSDemoState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4522917B2076809800B2A96D /* CSDemoState.m */; };
+		452291842076809800B2A96D /* CSDemoStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4522917D2076809800B2A96D /* CSDemoStore.m */; };
+		452291872076814A00B2A96D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452291862076814A00B2A96D /* ViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* CSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* CSAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* CSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* CSViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -38,7 +45,24 @@
 
 /* Begin PBXFileReference section */
 		37C8C055449C6DF633F1EF6B /* Pods-CSReduxKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSReduxKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSReduxKit_Tests/Pods-CSReduxKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		47F19F0734F4846D33E91D0C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4522916F2076809800B2A96D /* CSInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSInputView.h; sourceTree = "<group>"; };
+		452291702076809800B2A96D /* CSInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSInputView.m; sourceTree = "<group>"; };
+		452291712076809800B2A96D /* CSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTableView.h; sourceTree = "<group>"; };
+		452291722076809800B2A96D /* CSTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTableView.m; sourceTree = "<group>"; };
+		452291732076809800B2A96D /* CSTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTitleView.h; sourceTree = "<group>"; };
+		452291742076809800B2A96D /* CSTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTitleView.m; sourceTree = "<group>"; };
+		452291762076809800B2A96D /* CSDemoAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDemoAction.h; sourceTree = "<group>"; };
+		452291772076809800B2A96D /* CSDemoAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDemoAction.m; sourceTree = "<group>"; };
+		452291782076809800B2A96D /* CSDemoReducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDemoReducer.h; sourceTree = "<group>"; };
+		452291792076809800B2A96D /* CSDemoReducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDemoReducer.m; sourceTree = "<group>"; };
+		4522917A2076809800B2A96D /* CSDemoState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDemoState.h; sourceTree = "<group>"; };
+		4522917B2076809800B2A96D /* CSDemoState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDemoState.m; sourceTree = "<group>"; };
+		4522917C2076809800B2A96D /* CSDemoStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSDemoStore.h; sourceTree = "<group>"; };
+		4522917D2076809800B2A96D /* CSDemoStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSDemoStore.m; sourceTree = "<group>"; };
+		452291852076814A00B2A96D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		452291862076814A00B2A96D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		452291882076820A00B2A96D /* CSDemoReduxHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSDemoReduxHeader.h; sourceTree = "<group>"; };
+		47F19F0734F4846D33E91D0C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CSReduxKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSReduxKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,8 +73,6 @@
 		6003F59B195388D20070C39A /* CSReduxKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSReduxKit-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* CSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* CSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* CSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* CSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* CSReduxKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSReduxKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -64,9 +86,9 @@
 		9D8377BAD0B3CCB330B7B264 /* Pods-CSReduxKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSReduxKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSReduxKit_Example/Pods-CSReduxKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		ADDD8D71DE4ED955ED9D2FAE /* Pods_CSReduxKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSReduxKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79DD5ECDC09A3DFA3B2A465 /* Pods-CSReduxKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSReduxKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSReduxKit_Tests/Pods-CSReduxKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E266707F062203F06C5F22EB /* CSReduxKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CSReduxKit.podspec; path = ../CSReduxKit.podspec; sourceTree = "<group>"; };
+		E266707F062203F06C5F22EB /* CSReduxKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CSReduxKit.podspec; path = ../CSReduxKit.podspec; sourceTree = "<group>"; };
 		E6A833B8101ACEA748D51233 /* Pods-CSReduxKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSReduxKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSReduxKit_Example/Pods-CSReduxKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E8E3ACAC0E4862FCCD90E9A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E8E3ACAC0E4862FCCD90E9A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +128,36 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4522916E2076809800B2A96D /* demoModule */ = {
+			isa = PBXGroup;
+			children = (
+				4522916F2076809800B2A96D /* CSInputView.h */,
+				452291702076809800B2A96D /* CSInputView.m */,
+				452291712076809800B2A96D /* CSTableView.h */,
+				452291722076809800B2A96D /* CSTableView.m */,
+				452291732076809800B2A96D /* CSTitleView.h */,
+				452291742076809800B2A96D /* CSTitleView.m */,
+				452291752076809800B2A96D /* Redux */,
+			);
+			path = demoModule;
+			sourceTree = "<group>";
+		};
+		452291752076809800B2A96D /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				452291762076809800B2A96D /* CSDemoAction.h */,
+				452291772076809800B2A96D /* CSDemoAction.m */,
+				452291782076809800B2A96D /* CSDemoReducer.h */,
+				452291792076809800B2A96D /* CSDemoReducer.m */,
+				4522917A2076809800B2A96D /* CSDemoState.h */,
+				4522917B2076809800B2A96D /* CSDemoState.m */,
+				4522917C2076809800B2A96D /* CSDemoStore.h */,
+				4522917D2076809800B2A96D /* CSDemoStore.m */,
+				452291882076820A00B2A96D /* CSDemoReduxHeader.h */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -143,11 +195,12 @@
 		6003F593195388D20070C39A /* Example for CSReduxKit */ = {
 			isa = PBXGroup;
 			children = (
+				4522916E2076809800B2A96D /* demoModule */,
 				6003F59C195388D20070C39A /* CSAppDelegate.h */,
 				6003F59D195388D20070C39A /* CSAppDelegate.m */,
+				452291852076814A00B2A96D /* ViewController.h */,
+				452291862076814A00B2A96D /* ViewController.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* CSViewController.h */,
-				6003F5A6195388D20070C39A /* CSViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -320,10 +373,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CSReduxKit_Example/Pods-CSReduxKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CSReduxKit/CSReduxKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSReduxKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -355,9 +410,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452291812076809800B2A96D /* CSDemoAction.m in Sources */,
+				452291832076809800B2A96D /* CSDemoState.m in Sources */,
+				4522917F2076809800B2A96D /* CSTableView.m in Sources */,
+				452291802076809800B2A96D /* CSTitleView.m in Sources */,
+				452291872076814A00B2A96D /* ViewController.m in Sources */,
 				6003F59E195388D20070C39A /* CSAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* CSViewController.m in Sources */,
+				4522917E2076809800B2A96D /* CSInputView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				452291842076809800B2A96D /* CSDemoStore.m in Sources */,
+				452291822076809800B2A96D /* CSDemoReducer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

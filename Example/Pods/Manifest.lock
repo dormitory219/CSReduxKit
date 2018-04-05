@@ -1,0 +1,23 @@
+PODS:
+  - CSReduxKit (0.1.0)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - CSReduxKit (from `../`)
+  - Masonry (~> 1.1.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  CSReduxKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CSReduxKit: fd26588ba45028e23fb33e9738679b140b3e2720
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: d6b53339b69cb1c84f3c1b19bd2e0dd7564a676b
+
+COCOAPODS: 1.5.0.beta.1
